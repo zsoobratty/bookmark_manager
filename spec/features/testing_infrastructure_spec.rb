@@ -1,8 +1,6 @@
-require 'spec_helper'
-
 feature 'testing infrastructure' do
-    scenario 'can run app and see root page' do
-        visit('/')
-        expect(page).to have_content('Hello, world')
-    end
+  scenario 'can run app and see root page' do
+    visit('/')
+    expect(page).to have_content('Hello, world')
+  end
 end
