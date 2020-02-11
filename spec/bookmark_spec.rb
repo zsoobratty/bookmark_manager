@@ -2,11 +2,21 @@ require "bookmark"
 
 describe Bookmark do
 
-  describe ' #list' do
-    it 'should return hard coded bookmarks list' do
-      expect(described_class.all).to include("http://www.makersacademy.com")
-      expect(described_class.all).to include("http://www.destroyallsoftware.com")
-      expect(described_class.all).to include("http://www.google.com")
+  describe ' #all' do
+    it 'should return bookmarks list' do
+
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+
+      # Add the test data
+      connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
+      connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
+      connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com');")
+
+      bookmarks = Bookmark.all
+
+      expect(bookmarks).to include("http://www.makersacademy.com")
+      expect(bookmarks).to include("http://www.destroyallsoftware.com")
+      expect(bookmarks).to include("http://www.google.com")
     end
   end
 end
