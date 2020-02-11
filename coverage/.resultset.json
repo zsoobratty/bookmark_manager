@@ -20,16 +20,16 @@
           null
         ]
       },
-      "/Users/davide/Projects/bookmark_manager/lib/bookmark_storage.rb": {
+      "/Users/davide/Projects/bookmark_manager/lib/bookmark.rb": {
         "lines": [
           1,
           null,
           1,
           null,
-          3,
-          null,
-          null,
-          null,
+          1,
+          5,
+          5,
+          20,
           null,
           null
         ]
@@ -40,6 +40,8 @@
           null,
           1,
           null,
+          1,
+          1,
           1,
           1,
           1,
@@ -76,6 +78,6 @@
         ]
       }
     },
-    "timestamp": 1581351899
+    "timestamp": 1581431422
   }
 }
