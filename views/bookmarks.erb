@@ -4,7 +4,14 @@
 <body>
   <div>
     Bookmarks Page
-    <p> All of you lovely bookmarks are listed here: <%= @bookmarks %> </p>
+    <p> All of you lovely bookmarks are listed here: </p>
+    <% @bookmarks.each do |bookmark|  %>
+    <li>
+      <a href="<%=bookmark[1] %>">
+      <%= bookmark[0] %>
+      </a>
+    </li>
+  <% end %> 
   </div>
   <div>
     <form action="/bookmarks/new">
