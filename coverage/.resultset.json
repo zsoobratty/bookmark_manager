@@ -27,6 +27,19 @@
           null
         ]
       },
+      "/Users/davide/Projects/bookmark_manager/spec/features/adding_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/davide/Projects/bookmark_manager/spec/features/testing_infrastructure_spec.rb": {
         "lines": [
           1,
@@ -68,6 +81,6 @@
         ]
       }
     },
-    "timestamp": 1581438415
+    "timestamp": 1581518200
   }
 }
