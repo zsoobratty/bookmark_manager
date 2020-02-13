@@ -5,13 +5,16 @@
   <div>
     Bookmarks Page
     <p> All of you lovely bookmarks are listed here: </p>
+    <ul>
     <% @bookmarks.each do |bookmark|  %>
+    <li><%= bookmark %></li>
     <li>
-      <a href="<%=bookmark[1] %>">
-      <%= bookmark[0] %>
+      <a href="<%=bookmark.url %>">
+      <%= bookmark.title %>
       </a>
     </li>
   <% end %> 
+  </ul>
   </div>
   <div>
     <form action="/bookmarks/new">
